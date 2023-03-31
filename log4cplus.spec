@@ -4,7 +4,7 @@
 
 Name: log4cplus
 Version: 2.0.8
-Release: 1
+Release: 2
 Source0: https://github.com/log4cplus/log4cplus/releases/download/REL_%(echo %{version}|sed -e 's,\.,_,g')/log4cplus-%{version}.tar.xz
 Summary: C++17 logging library
 URL: https://github.com/log4cplus/log4cplus
