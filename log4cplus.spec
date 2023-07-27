@@ -1,4 +1,4 @@
-%define major 3
+%define major 9
 %define libname %mklibname log4cplus
 %define devname %mklibname log4cplus -d
 
