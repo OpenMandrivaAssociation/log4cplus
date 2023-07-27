@@ -1,10 +1,10 @@
-%define major 3
+%define major 9
 %define libname %mklibname log4cplus
 %define devname %mklibname log4cplus -d
 
 Name: log4cplus
-Version: 2.0.8
-Release: 2
+Version: 2.1.0
+Release: 1
 Source0: https://github.com/log4cplus/log4cplus/releases/download/REL_%(echo %{version}|sed -e 's,\.,_,g')/log4cplus-%{version}.tar.xz
 Summary: C++17 logging library
 URL: https://github.com/log4cplus/log4cplus
@@ -56,6 +56,9 @@ It is modeled after the Java log4j API.
 %ninja_install -C build
 
 %files
+%doc %{_datadir}/log4cplus/ChangeLog
+%doc %{_datadir}/log4cplus/LICENSE
+%doc %{_datadir}/log4cplus/README.md
 %{_bindir}/*
 
 %files -n %{libname}
@@ -63,5 +66,6 @@ It is modeled after the Java log4j API.
 
 %files -n %{devname}
 %{_includedir}/*
+%{_libdir}/pkgconfig/log4cplus.pc
 %{_libdir}/*.so
 %{_libdir}/cmake/*
