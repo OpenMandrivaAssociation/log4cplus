@@ -56,6 +56,9 @@ It is modeled after the Java log4j API.
 %ninja_install -C build
 
 %files
+%doc %{_datadir}/log4cplus/ChangeLog
+%doc %{_datadir}/log4cplus/LICENSE
+%doc %{_datadir}/log4cplus/README.md
 %{_bindir}/*
 
 %files -n %{libname}
@@ -63,5 +66,6 @@ It is modeled after the Java log4j API.
 
 %files -n %{devname}
 %{_includedir}/*
+%{_libdir}/pkgconfig/log4cplus.pc
 %{_libdir}/*.so
 %{_libdir}/cmake/*
