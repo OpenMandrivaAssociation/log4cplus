@@ -3,7 +3,7 @@
 %define devname %mklibname log4cplus -d
 
 Name: log4cplus
-Version: 2.1.0
+Version: 2.1.1
 Release: 1
 Source0: https://github.com/log4cplus/log4cplus/releases/download/REL_%(echo %{version}|sed -e 's,\.,_,g')/log4cplus-%{version}.tar.xz
 Summary: C++17 logging library
